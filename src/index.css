@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #bg-section2 {
-  background-image: url(public/photos/pexels-photo-7464687.webp);
+  background-image: url(photos/pexels-photo-7464687.webp);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2); /* Warna gelap dengan transparansi */
   background-blend-mode: darken;
