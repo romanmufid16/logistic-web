@@ -1,5 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { reasons } from "../utils/data";
+import ReasonDesc from "../components/ReasonDesc";
 
 const Home = () => {
   return (
@@ -25,7 +27,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section className="bg-secondary p-20">
+      <section className="p-20" id="bg-section2">
         <div className="max-w-lg bg-primary rounded-md p-10">
           <span className="block text-accent text-lg mb-10">
             Request A Quote
@@ -35,12 +37,12 @@ const Home = () => {
               <span className="block text-white mb-5">About Yourself</span>
               <input
                 type="text"
-                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3"
+                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3 text-white"
                 placeholder="Your Name"
               />
               <input
                 type="email"
-                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3"
+                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3 text-white"
                 placeholder="Email Adress"
               />
             </div>
@@ -48,12 +50,12 @@ const Home = () => {
               <span className="block text-white mb-5">Moving</span>
               <input
                 type="text"
-                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3"
+                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3 text-white"
                 placeholder="Moving From"
               />
               <input
                 type="text"
-                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3"
+                className="text-sm block w-full bg-[#121212] px-5 py-4 rounded-xl mb-3 text-white"
                 placeholder="Moving To"
               />
             </div>
@@ -74,7 +76,7 @@ const Home = () => {
         <div>
           <div className="max-w-xl rounded-xl overflow-hidden">
             <img
-              src="https://placehold.co/400"
+              src="https://biteship.com/blog/wp-content/uploads/2023/05/asian-factory-warehouse-staff-worker-enjoy-working-together-cargo-inventory-shipping-logistics-team-work_43300-4887.jpeg"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -127,53 +129,19 @@ const Home = () => {
             <span className="text-accentHover"> Top Choices</span>
             <span> for House Moves</span>
           </div>
-          <div className="flex gap-2 mb-3">
-            <span className="text-xl">Experienced Professionals</span>
-            <span className="text-sm text-secondary">01</span>
-          </div>
-          <p className="text-text mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            magni sapiente quia deserunt. Quidem molestias nemo, debitis, eos,
-            earum pariatur placeat unde harum repellat doloremque sint iure
-            inventore totam dicta.
-          </p>
-          <div className="flex items-center text-secondary mb-3">
-            •
-            <hr className="border w-full border-secondary" />•
-          </div>
-          <div className="flex gap-2 mb-3">
-            <span className="text-xl">Tailored Solutions</span>
-            <span className="text-sm text-secondary">02</span>
-          </div>
-          <p className="text-text mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            magni sapiente quia deserunt. Quidem molestias nemo, debitis, eos,
-            earum pariatur placeat unde harum repellat doloremque sint iure
-            inventore totam dicta.
-          </p>
-          <div className="flex items-center text-secondary mb-3">
-            •
-            <hr className="border w-full border-secondary" />•
-          </div>
-          <div className="flex gap-2 mb-3">
-            <span className="text-xl">Efficiency and Timeliness</span>
-            <span className="text-sm text-secondary">03</span>
-          </div>
-          <p className="text-text mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            magni sapiente quia deserunt. Quidem molestias nemo, debitis, eos,
-            earum pariatur placeat unde harum repellat doloremque sint iure
-            inventore totam dicta.
-          </p>
-          <div className="flex items-center text-secondary mb-3">
-            •
-            <hr className="border w-full border-secondary" />•
-          </div>
+          {reasons.map((item, index) => (
+            <ReasonDesc
+              key={index}
+              title={item.title}
+              num={item.num}
+              desc={item.desc}
+            />
+          ))}
         </div>
         <div className="flex gap-y-7 flex-col max-w-xl">
           <div className="rounded-xl overflow-hidden">
             <img
-              src="https://placehold.co/400"
+              src="https://img.freepik.com/premium-photo/smiling-man-mover-worker-blue-uniform-driving-truck-delivery-moving-house-service_34755-1405.jpg"
               alt=""
               className="w-full h-full object-cover"
             />
@@ -186,8 +154,12 @@ const Home = () => {
               <FaStar />
               <FaStar />
             </div>
-            <span className="block text-white">4.8/5 Ratings from Customers</span>
-            <span className="text-text text-sm">Lorem ipsum dolor sit amet.</span>
+            <span className="block text-white">
+              4.8/5 Ratings from Customers
+            </span>
+            <span className="text-text text-sm">
+              Lorem ipsum dolor sit amet.
+            </span>
           </div>
         </div>
       </section>
