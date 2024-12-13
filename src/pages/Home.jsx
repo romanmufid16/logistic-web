@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -116,6 +117,77 @@ const Home = () => {
                 </span>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section className="flex justify-around items-center  p-20 bg-white">
+        <div className="flex flex-col max-w-xl">
+          <div className="mb-10 text-5xl leading-tight">
+            <span>Why We're Your</span>
+            <span className="text-accentHover"> Top Choices</span>
+            <span> for House Moves</span>
+          </div>
+          <div className="flex gap-2 mb-3">
+            <span className="text-xl">Experienced Professionals</span>
+            <span className="text-sm text-secondary">01</span>
+          </div>
+          <p className="text-text mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            magni sapiente quia deserunt. Quidem molestias nemo, debitis, eos,
+            earum pariatur placeat unde harum repellat doloremque sint iure
+            inventore totam dicta.
+          </p>
+          <div className="flex items-center text-secondary mb-3">
+            •
+            <hr className="border w-full border-secondary" />•
+          </div>
+          <div className="flex gap-2 mb-3">
+            <span className="text-xl">Tailored Solutions</span>
+            <span className="text-sm text-secondary">02</span>
+          </div>
+          <p className="text-text mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            magni sapiente quia deserunt. Quidem molestias nemo, debitis, eos,
+            earum pariatur placeat unde harum repellat doloremque sint iure
+            inventore totam dicta.
+          </p>
+          <div className="flex items-center text-secondary mb-3">
+            •
+            <hr className="border w-full border-secondary" />•
+          </div>
+          <div className="flex gap-2 mb-3">
+            <span className="text-xl">Efficiency and Timeliness</span>
+            <span className="text-sm text-secondary">03</span>
+          </div>
+          <p className="text-text mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            magni sapiente quia deserunt. Quidem molestias nemo, debitis, eos,
+            earum pariatur placeat unde harum repellat doloremque sint iure
+            inventore totam dicta.
+          </p>
+          <div className="flex items-center text-secondary mb-3">
+            •
+            <hr className="border w-full border-secondary" />•
+          </div>
+        </div>
+        <div className="flex gap-y-7 flex-col max-w-xl">
+          <div className="rounded-xl overflow-hidden">
+            <img
+              src="https://placehold.co/400"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="bg-black p-5 rounded-xl space-y-3">
+            <div className="flex gap-1 text-accent">
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+              <FaStar />
+            </div>
+            <span className="block text-white">4.8/5 Ratings from Customers</span>
+            <span className="text-text text-sm">Lorem ipsum dolor sit amet.</span>
           </div>
         </div>
       </section>
